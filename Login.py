@@ -11,12 +11,12 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-ctk.set_appearance_mode("System")  # Modes: "System" (default), "Dark", "Light"
-ctk.set_default_color_theme("green")  # Themes: "blue" (default), "dark-blue", "green"
+ctk.set_appearance_mode("System")
+ctk.set_default_color_theme("green") 
 
 def login_window():
     
-    login = ctk.CTkToplevel()  # Use CTkToplevel for windows
+    login = ctk.CTkToplevel()
     login.title("Welcome Back")
     login.geometry("300x200")
     login.resizable(0, 0)  
@@ -82,7 +82,7 @@ def registration_window():
     register_button = ctk.CTkButton(registration, text="Register", command=add_user)
     register_button.place(x=110, y=160)
 
-root = ctk.CTk()  # Use CTk instead of Tk
+root = ctk.CTk()
 root.title("Login")
 root.geometry("300x200")
 root.resizable(0, 0)
