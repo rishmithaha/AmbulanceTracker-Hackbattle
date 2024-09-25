@@ -14,7 +14,7 @@ frame.pack(pady=20, fill="both", expand=True)
 
 # Add the map widget to the frame
 map_widget = tkintermapview.TkinterMapView(frame, width=800, height=600, corner_radius=0)
-map_widget.set_position(12.969938, 79.1556)  # Vellore's coordinates
+map_widget.set_position(12.969938, 79.1556, marker = True)  # Vellore's coordinates
 map_widget.set_tile_server("https://mt0.google.com/vt/Lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga", max_zoom=22)
 
 # Pack the map widget inside the frame
