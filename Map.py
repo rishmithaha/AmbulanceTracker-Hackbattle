@@ -26,7 +26,7 @@ def button():
 
 # Add a button using customtkinter
 button = customtkinter.CTkButton(master=window, text="Testing", command=button)
-button.place(relx=0.5, rely=0.9, anchor=customtkinter.CENTER)
+button.place(relx=0.5, rely=0.9, anchor=customtkinter.E, size = 50)
 
 # Start the main event loop
 window.mainloop()
