@@ -31,6 +31,8 @@ ambulance_3 = map_widget.set_marker(12.965500, 79.158000, text=f"Ambulance 3: {a
 ambulance_4 = map_widget.set_marker(12.923340, 79.140970, text=f"Ambulance 4: {ambulance_statuses[3]}",
                                     icon=ambulance_icon)
 
+path1 = map_widget.set_path([(12.992840, 79.152810), (12.943470, 79.158540)])
+
 def update_ambulance_status(ambulance_number):
     global ambulance_statuses
   
